@@ -1,0 +1,19 @@
+
+**** Build of configuration Debug for project PruLibrary ****
+
+/home/pops/ti/ccs1250/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building file: "../src/pru_gpio.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1250/ccs/ccs_base/pru/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruLibrary" --include_path="/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/src/include" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/pru_gpio.d_raw" --obj_directory="src"  "../src/pru_gpio.c"
+Finished building: "../src/pru_gpio.c"
+ 
+Building target: "PruLibrary.lib"
+Invoking: PRU Archiver
+"/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/arpru" r "PruLibrary.lib" "./main.obj" "./src/pru_gpio.obj" 
+  ==>  new archive 'PruLibrary.lib'
+  ==>  building archive 'PruLibrary.lib'
+Finished building target: "PruLibrary.lib"
+ 
+
+**** Build Finished ****

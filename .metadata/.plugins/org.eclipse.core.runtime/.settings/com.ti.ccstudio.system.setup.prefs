@@ -1,0 +1,2 @@
+DEFAULT_CCS_TARGET_CONFIGURATION=/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/targetConfigs/AM64x.ccxml
+eclipse.preferences.version=1

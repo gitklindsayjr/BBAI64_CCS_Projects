@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<ofd>
+   <banner>PRU Object File Display Unix v2.3.3</banner>
+   <copyright>Copyright (c) 2012-2018 Texas Instruments Incorporated</copyright>
+   <name>/home/pops/MicroControllers/Beaglebone64_Prus/EHRPWM_Pru0/Debug/EHRPWM_Pru0.out</name>
+   <call_graph>
+      <function>
+         <name>main</name>
+         <stack_size>0x6</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>../src/pwm.c</file>
+         <line>0x41</line>
+         <address>0x15c</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI PRU C/C++ Codegen Unix v2.3.3 Copyright (c) 2012-2018 Texas Instruments Incorporated</producer>
+         <callee>initPwm</callee>
+      </function>
+      <function>
+         <name>initPwm</name>
+         <stack_size>0x0</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>../src/pwm.c</file>
+         <line>0x81</line>
+         <address>0x1c</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI PRU C/C++ Codegen Unix v2.3.3 Copyright (c) 2012-2018 Texas Instruments Incorporated</producer>
+      </function>
+      <function>
+         <name>_c_int00_noinit_noargs</name>
+         <stack_size>0x0</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>boot.c</file>
+         <line>0x5c</line>
+         <address>0x0</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI PRU C/C++ Codegen Unix v2.3.3 Copyright (c) 2012-2018 Texas Instruments Incorporated</producer>
+         <callee>main</callee>
+         <callee></callee>
+      </function>
+      <function>
+         <name></name>
+         <stack_size>0x0</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file></file>
+         <line>0x0</line>
+         <address>0x0</address>
+         <is_combined>false</is_combined>
+         <definition_seen>false</definition_seen>
+         <has_stack_usage_info>false</has_stack_usage_info>
+         <producer></producer>
+      </function>
+      <function>
+         <name>loader_exit</name>
+         <stack_size>0x0</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>exit.c</file>
+         <line>0x33</line>
+         <address>0x1b0</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI PRU C/C++ Codegen Unix v2.3.3 Copyright (c) 2012-2018 Texas Instruments Incorporated</producer>
+      </function>
+      <function>
+         <name>abort</name>
+         <stack_size>0x0</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>exit.c</file>
+         <line>0x62</line>
+         <address>0x1a8</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI PRU C/C++ Codegen Unix v2.3.3 Copyright (c) 2012-2018 Texas Instruments Incorporated</producer>
+         <callee>loader_exit</callee>
+      </function>
+   </call_graph>
+</ofd>

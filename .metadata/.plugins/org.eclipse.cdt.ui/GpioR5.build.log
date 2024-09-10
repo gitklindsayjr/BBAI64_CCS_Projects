@@ -1,0 +1,20 @@
+
+**** Build of configuration Debug for project GpioR5 ****
+
+/home/pops/ti/ccs1240/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building file: "../src/main.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" --code_state=32 --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/GpioR5" --include_path="/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="src/main.d_raw" --obj_directory="src"  "../src/main.c"
+ 
+>> Compilation failure
+src/subdir_rules.mk:7: recipe for target 'src/main.obj' failed
+"../src/main.c", line 9: error #20: identifier "GPIO0" is undefined
+"../src/main.c", line 18: warning #225-D: function "__delay_cycles" declared implicitly
+"../src/main.c", line 18: error #20: identifier "PW_CLK_CYCLES" is undefined
+"../src/main.c", line 24: warning #112-D: statement is unreachable
+2 errors detected in the compilation of "../src/main.c".
+gmake: *** [src/main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

@@ -1,0 +1,54 @@
+[
+  {
+    "name": "MCU_PLUS_SDK_AM64x",
+    "displayName": "MCU+ SDK for AM64x",
+    "version": "09.00.00",
+    "path": "/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/.metadata/product.json",
+    "contexts": {
+      "AM64x": [
+        {
+          "name": "r5fss0-0",
+          "targetdbId": "r5fss0-0"
+        },
+        {
+          "name": "r5fss0-1",
+          "targetdbId": "r5fss0-1"
+        },
+        {
+          "name": "r5fss1-0",
+          "targetdbId": "r5fss1-0"
+        },
+        {
+          "name": "r5fss1-1",
+          "targetdbId": "r5fss1-1"
+        },
+        {
+          "name": "m4fss0-0",
+          "targetdbId": "m4fss0-0"
+        },
+        {
+          "name": "a53ss0-0",
+          "targetdbId": "a53ss0-0"
+        }
+      ]
+    },
+    "documentationPath": "../docs"
+  },
+  {
+    "name": "MCU_PLUS_SDK_AM64x",
+    "displayName": "MCU+ SDK for AM64x",
+    "version": "08.06.00",
+    "path": "/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/.metadata/product.json",
+    "contexts": {
+      "AM64x_beta": [
+        "r5fss0-0",
+        "r5fss0-1",
+        "r5fss1-0",
+        "r5fss1-1",
+        "m4fss0-0",
+        "a53ss0-0"
+      ]
+    },
+    "documentationPath": "../docs"
+  }
+]

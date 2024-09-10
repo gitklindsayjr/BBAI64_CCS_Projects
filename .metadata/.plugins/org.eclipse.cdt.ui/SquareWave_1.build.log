@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project SquareWave_1 ****
+
+/home/pops/ti/ccs1230/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building file: "../src/square_wave.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1230/ccs/ccs_base/pru/include" --include_path="/home/pops/ti/pru-software-support-package/include" --include_path="/home/pops/ti/pru-software-support-package/include/j721e" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/SquareWave_1" --include_path="/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/square_wave.d_raw" --obj_directory="src"  "../src/square_wave.c"
+Finished building: "../src/square_wave.c"
+ 
+Building target: "square-wave_1.out"
+Invoking: PRU Linker
+"/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little -z -m"SquareWave_1.map" --stack_size=0x100 -i"/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/lib" -i"/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SquareWave_1_linkInfo.xml" --rom_model -o "square-wave_1.out" "./src/square_wave.obj" "../J721E_PRU1.cmd"  -llibc.a 
+<Linking>
+Finished building target: "square-wave_1.out"
+ 
+
+**** Build Finished ****

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;EQEPpru0/src/apwm.c&apos; to &apos;eqep.c&apos;" description="Rename resource &apos;apwm.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/apwm.c" name="eqep.c" stamp="1695414615385" updateReferences="true"/>
+</session>

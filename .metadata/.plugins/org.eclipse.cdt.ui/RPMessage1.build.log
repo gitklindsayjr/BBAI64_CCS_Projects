@@ -1,0 +1,13 @@
+
+**** Build of configuration Debug for project RPMessage1 ****
+
+/home/pops/ti/ccs1240/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building target: "rpMsg_pru1.out"
+Invoking: PRU Linker
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little -z -m"RPMessage1.map" --heap_size=0x100 --stack_size=0x100 -i"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/lib" -i"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="RPMessage1_linkInfo.xml" --rom_model -o "rpMsg_pru1.out" "./src/main.obj" "./src/pru_rpmsg.obj" "./src/pru_virtqueue.obj" "../J721E_PRU1_intc_rscTbl.cmd"  -llibc.a 
+<Linking>
+Finished building target: "rpMsg_pru1.out"
+ 
+
+**** Build Finished ****

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;EHRPWM_Pru0/src/pwm.c&apos; to &apos;ehrpwm.c&apos;" description="Rename resource &apos;pwm.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/pwm.c" name="ehrpwm.c" stamp="1692731612049" updateReferences="true"/>
+</session>

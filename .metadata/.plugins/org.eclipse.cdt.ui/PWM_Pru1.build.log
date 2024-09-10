@@ -1,0 +1,28 @@
+
+**** Build of configuration Debug for project PWM_Pru1 ****
+
+/home/pops/ti/ccs1240/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building file: "../src/pru_virtqueue.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1240/ccs/ccs_base/pru/include" --include_path="/home/pops/ti/pru-software-support-package/include/am64x" --include_path="/home/pops/ti/pru-software-support-package/include" --include_path="/home/pops/MicroControllers/SK_AM64B_Evm/PWM_Pru1" --include_path="/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/pru_virtqueue.d_raw" --obj_directory="src"  "../src/pru_virtqueue.c"
+Finished building: "../src/pru_virtqueue.c"
+ 
+Building file: "../src/pru_rpmsg.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1240/ccs/ccs_base/pru/include" --include_path="/home/pops/ti/pru-software-support-package/include/am64x" --include_path="/home/pops/ti/pru-software-support-package/include" --include_path="/home/pops/MicroControllers/SK_AM64B_Evm/PWM_Pru1" --include_path="/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/pru_rpmsg.d_raw" --obj_directory="src"  "../src/pru_rpmsg.c"
+Finished building: "../src/pru_rpmsg.c"
+ 
+Building file: "../src/pwm.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1240/ccs/ccs_base/pru/include" --include_path="/home/pops/ti/pru-software-support-package/include/am64x" --include_path="/home/pops/ti/pru-software-support-package/include" --include_path="/home/pops/MicroControllers/SK_AM64B_Evm/PWM_Pru1" --include_path="/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/pwm.d_raw" --obj_directory="src"  "../src/pwm.c"
+Finished building: "../src/pwm.c"
+ 
+Building target: "PWM_Pru1.out"
+Invoking: PRU Linker
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little -z -m"PWM_Pru1.map" --stack_size=0x100 -i"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/lib" -i"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="PWM_Pru1_linkInfo.xml" --rom_model -o "PWM_Pru1.out" "./src/pru_rpmsg.obj" "./src/pru_virtqueue.obj" "./src/pwm.obj" "../AM64x_PRU1_intc_rscTbl.cmd"  -llibc.a 
+<Linking>
+Finished building target: "PWM_Pru1.out"
+ 
+
+**** Build Finished ****

@@ -1,0 +1,30 @@
+// SPDX-License-Identifier: GPL-2.0
+/*
+ * Copyright (C) 2022 Jason Kridner, BeagleBoard.org Foundation
+ */
+
+/dts-v1/;
+/plugin/;
+
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/interrupt-controller/arm-gic.h>
+#include <dt-bindings/interrupt-controller/irq.h>
+#include <dt-bindings/pinctrl/k3.h>
+#include <dt-bindings/board/k3-j721e-bone-pins.h>
+#include <dt-bindings/soc/ti,sci_pm_domain.h>
+#include <dt-bindings/input/linux-event-codes.h>
+
+&{/chosen} {
+	overlays {
+		SquareWave.kernel = __TIMESTAMP__;
+	};
+};
+&cape_header {
+	pinctrl-names = "default";
+	pinctrl-0 = <
+		&P8_16_gpio_pin   /* GPIO0_62    */
+        &P8_14_gpio_pin   /* GPIO0_75    */
+        &P8_12_pruout_pin /* PRU0_bit_12 */
+		&P8_20_pruout_pin /* PRU1_bit_13 */
+	>;
+};

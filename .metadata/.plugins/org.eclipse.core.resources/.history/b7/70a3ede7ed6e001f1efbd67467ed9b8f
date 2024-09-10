@@ -1,0 +1,36 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../src/apwm.c \
+/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/src/lib/src/rpmsg_lib/pru_rpmsg.c \
+/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/src/lib/src/rpmsg_lib/pru_virtqueue.c 
+
+C_DEPS += \
+./src/apwm.d \
+./src/pru_rpmsg.d \
+./src/pru_virtqueue.d 
+
+OBJS += \
+./src/apwm.obj \
+./src/pru_rpmsg.obj \
+./src/pru_virtqueue.obj 
+
+OBJS__QUOTED += \
+"src/apwm.obj" \
+"src/pru_rpmsg.obj" \
+"src/pru_virtqueue.obj" 
+
+C_DEPS__QUOTED += \
+"src/apwm.d" \
+"src/pru_rpmsg.d" \
+"src/pru_virtqueue.d" 
+
+C_SRCS__QUOTED += \
+"../src/apwm.c" \
+"/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/src/lib/src/rpmsg_lib/pru_rpmsg.c" \
+"/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/src/lib/src/rpmsg_lib/pru_virtqueue.c" 
+
+

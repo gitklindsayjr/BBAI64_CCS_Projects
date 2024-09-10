@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../src/apwm.c 
+
+C_DEPS += \
+./src/apwm.d 
+
+OBJS += \
+./src/apwm.obj 
+
+OBJS__QUOTED += \
+"src/apwm.obj" 
+
+C_DEPS__QUOTED += \
+"src/apwm.d" 
+
+C_SRCS__QUOTED += \
+"../src/apwm.c" 
+
+

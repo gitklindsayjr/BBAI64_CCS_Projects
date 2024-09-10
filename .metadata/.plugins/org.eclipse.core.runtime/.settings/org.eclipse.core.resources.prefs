@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+pathvariable.PRU0_CMD=/home/pops/ti/pru-software-support-package/examples/j721e/PRU_RPMsg_Echo_Interrupt0
+pathvariable.PRU1_CMD=/home/pops/ti/pru-software-support-package/examples/j721e/PRU_RPMsg_Echo_Interrupt1
+pathvariable.PRU_PACKAGE=/home/pops/ti/pru-software-support-package
+version=1

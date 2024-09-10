@@ -1,0 +1,82 @@
+// SPDX-License-Identifier: GPL-2.0
+/*
+ * Copyright (C) 2022 Jason Kridner, BeagleBoard.org Foundation
+ */
+
+/dts-v1/;
+/plugin/;
+
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/interrupt-controller/arm-gic.h>
+#include <dt-bindings/interrupt-controller/irq.h>
+#include <dt-bindings/pinctrl/k3.h>
+#include <dt-bindings/board/k3-j721e-bone-pins.h>
+#include <dt-bindings/soc/ti,sci_pm_domain.h>
+#include <dt-bindings/input/linux-event-codes.h>
+&{/chosen} {
+	overlays {
+		MotorControl.kernel = __TIMESTAMP__;
+	};
+};
+
+&cape_header {
+	pinctrl-names = "default";
+	pinctrl-0 = <
+		&P8_07_gpio_pin		/* GPIO0_bit15 */
+		&P9_27_qep_pin		/* EQEP0_B */
+		&P9_42_qep_pin		/* EQEP0_A */
+		&P8_33_qep_pin		/* EQEP1_B */
+		&P8_35_qep_pin		/* EQEP1_A */
+		&P8_12_pruout_pin	/* Direction bit PRU0 */
+		&P8_15_pruout_pin   /* APWM mode */
+		&P8_16_gpio_pin     /* GPIO0_bit62 Scope debug pin */
+		&P8_14_pruout_pin	/* Scope debug pin PRU1 */
+	>;
+};
+
+
+&cbass_main {
+	#address-cells = <2>;
+	#size-cells = <2>;
+
+	/* TODO: the base for this should be in the board DT */
+	eqep0: qep@3200000 {
+		status = "okay";
+		compatible = "ti,am3352-eqep";
+		reg = <0 0x3200000 0 0x100>;
+		power-domains = <&k3_pds 94 TI_SCI_PD_EXCLUSIVE>;
+		clocks = <&k3_clks 94 0>;
+		clock-names = "eqep0-ficlk";
+		interrupt-parent = <&gic500>;
+		interrupts = <GIC_SPI 322 IRQ_TYPE_EDGE_RISING>;
+		interrupt-names = "eqep0";
+		symlink = "bone/qep/0"; /* A - P9_42, B - P9_27 */
+
+		count_mode = <0>;
+		swap_input = <0>;
+		invert_qa = <1>;
+		invert_qb = <1>;
+		invert_qi = <0>;
+		invert_qs = <0>;
+	};
+
+	eqep1: qep@3210000 {
+		status = "okay";
+		compatible = "ti,am3352-eqep";
+		reg = <0 0x3210000 0 0x100>;
+		power-domains = <&k3_pds 95 TI_SCI_PD_EXCLUSIVE>;
+		clocks = <&k3_clks 95 0>;
+		clock-names = "eqep1-ficlk";
+		interrupt-parent = <&gic500>;
+		interrupts = <GIC_SPI 323 IRQ_TYPE_EDGE_RISING>;
+		interrupt-names = "eqep1";
+		symlink = "bone/qep/1"; /* A - P8_35, B - P8_33 */
+
+		count_mode = <0>;
+		swap_input = <0>;
+		invert_qa = <1>;
+		invert_qb = <1>;
+		invert_qi = <0>;
+		invert_qs = <0>;
+	};
+};

@@ -1,0 +1,7 @@
+1725830277789	Delete resource 'SquareWave0/J721E_PRU0_intc_rscTbl.cmd'
+1725830416089	Delete resource 'SquareWave1/J721E_PRU1_intc_rscTbl.cmd'
+1725837349337	Delete resource 'PruLibrary/Debug/src/pru_rpmsg.obj'
+1725837353341	Delete resource 'PruLibrary/Debug/src/pru_virtqueue.obj'
+1725837717602	Delete resource 'SquareWave1/src/pru_virtqueue.c'
+1725909663765	Delete resource 'APWMpru0/src/intc_map_0.h'
+1725909667569	Delete resource 'APWMpru0/src/resource_table.h'

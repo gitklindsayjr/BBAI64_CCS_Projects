@@ -1,0 +1,23 @@
+
+**** Build of configuration Debug for project RPM_MessageEcho_0 ****
+
+/home/pops/ti/ccs1230/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building file: "../src/pru_virtqueue.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1230/ccs/ccs_base/pru/include" --include_path="/home/pops/ti/pru-software-support-package/include" --include_path="/home/pops/ti/pru-software-support-package/include/j721e" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/RPM_MessageEcho_0" --include_path="/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/pru_virtqueue.d_raw" --obj_directory="src"  "../src/pru_virtqueue.c"
+Finished building: "../src/pru_virtqueue.c"
+ 
+Building file: "../src/pru_rpmsg.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1230/ccs/ccs_base/pru/include" --include_path="/home/pops/ti/pru-software-support-package/include" --include_path="/home/pops/ti/pru-software-support-package/include/j721e" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/RPM_MessageEcho_0" --include_path="/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/pru_rpmsg.d_raw" --obj_directory="src"  "../src/pru_rpmsg.c"
+Finished building: "../src/pru_rpmsg.c"
+ 
+Building target: "rpmMsg_pru0.out"
+Invoking: PRU Linker
+"/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little -z -m"RPM_MessageEcho_0.map" --heap_size=0x100 --stack_size=0x100 -i"/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/lib" -i"/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="RPM_MessageEcho_0_linkInfo.xml" --rom_model -o "rpmMsg_pru0.out" "./src/pru_rpmsg.obj" "./src/pru_virtqueue.obj" "./src/rpmMsg_pru0.obj" "../J721E_PRU0_intc_rscTbl.cmd"  -llibc.a 
+<Linking>
+Finished building target: "rpmMsg_pru0.out"
+ 
+
+**** Build Finished ****

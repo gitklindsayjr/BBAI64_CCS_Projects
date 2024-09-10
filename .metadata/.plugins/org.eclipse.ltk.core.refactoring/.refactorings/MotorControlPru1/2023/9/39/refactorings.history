@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MotorControlPru1/J721E_PRU1_intc_rscTbl.cmd&apos; to &apos;J721E_PRU1_rscTbl.cmd&apos;" description="Rename resource &apos;J721E_PRU1_intc_rscTbl.cmd&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="J721E_PRU1_intc_rscTbl.cmd" name="J721E_PRU1_rscTbl.cmd" stamp="1695597237794" updateReferences="true"/>
+</session>

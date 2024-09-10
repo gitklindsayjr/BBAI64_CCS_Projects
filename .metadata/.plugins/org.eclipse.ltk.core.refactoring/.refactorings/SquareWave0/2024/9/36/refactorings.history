@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SquareWave0/squareWave.dts&apos; to &apos;SquareWave.dts&apos;" description="Rename resource &apos;squareWave.dts&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="squareWave.dts" name="SquareWave.dts" stamp="1725394277770" updateReferences="false"/>
+</session>

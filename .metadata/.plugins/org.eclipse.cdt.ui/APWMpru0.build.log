@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project APWMpru0 ****
+
+/home/pops/ti/ccs1250/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+gmake[1]: 'APWMpru0.out' is up to date.
+
+**** Build Finished ****

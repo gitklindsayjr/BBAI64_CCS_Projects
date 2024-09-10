@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.cdt.ui.wizards.NewSourceFolderCreationWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.cdt.ui.newCWizards"/>
+		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="69"/>
+		<item key="DIALOG_Y_ORIGIN" value="-10"/>
+		<item key="DIALOG_WIDTH" value="798"/>
+		<item key="DIALOG_HEIGHT" value="837"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+	</section>
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.FileSystem"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_VIRTUAL_FOLDERS_ID" value="true"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_LINKS_IN_WORKSPACE_ID" value="true"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_PATH_VARIABLE_SELECTED_ID" value="true"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_PATH_VARIABLE_NAME_ID" value="PROJECT_LOC"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/src/lib/src/rpmsg_lib"/>
+			<item value="/home/pops/ti/pru-software-support-package"/>
+			<item value="/home/pops/ti/pru-software-support-package/include"/>
+			<item value="/home/pops/ti/pru-software-support-package/include/j721e"/>
+			<item value="/home/pops/ti/pru-software-support-package/lib/src/rpmsg_lib"/>
+			<item value="/home/pops/ti/pru-software-support-package/examples/j721e"/>
+			<item value="/home/pops/MicroControllers/Beaglebone64_Prus/PruLibrary/src"/>
+			<item value="/home/pops/MicroControllers/Beaglebone64_Prus/bbai64_cortex-r5_example-r5_toggle"/>
+			<item value="/home/pops/MicroControllers/Beaglebone64_Prus/bbai64_cortex-r5_example-r5_toggle/r5"/>
+		</list>
+	</section>
+</section>

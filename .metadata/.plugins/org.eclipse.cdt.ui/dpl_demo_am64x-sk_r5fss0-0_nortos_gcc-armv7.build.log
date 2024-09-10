@@ -1,0 +1,112 @@
+
+**** Build of configuration Debug for project dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7 ****
+
+/home/pops/ti/ccs1230/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building file: "../dpl_demo.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/bin/aarch64-none-elf-gcc-9.2.1" -c -mcpu=cortex-r5 -marm -mfloat-abi=hard -mfpu=vfpv3-d16 -DSOC_AM64X -D_DEBUG_=1 -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7" -I"/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/source" -I"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/aarch64-none-elf/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-unused-but-set-variable -MMD -MP -MF"dpl_demo.d_raw" -MT"dpl_demo.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/Debug/syscfg"   -o"dpl_demo.o" "../dpl_demo.c"
+subdir_rules.mk:7: recipe for target 'dpl_demo.o' failed
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-marm'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfloat-abi=hard'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfpu=vfpv3-d16'
+gmake: *** [dpl_demo.o] Error 1
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-marm'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfloat-abi=hard'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfpu=vfpv3-d16'
+gmake: *** [syscfg/ti_dpl_config.o] Error 1
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-marm'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfloat-abi=hard'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfpu=vfpv3-d16'
+gmake: *** [syscfg/ti_drivers_config.o] Error 1
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-marm'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfloat-abi=hard'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfpu=vfpv3-d16'
+gmake: *** [syscfg/ti_drivers_open_close.o] Error 1
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-marm'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfloat-abi=hard'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfpu=vfpv3-d16'
+gmake: *** [syscfg/ti_pinmux_config.o] Error 1
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-marm'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfloat-abi=hard'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfpu=vfpv3-d16'
+gmake: *** [syscfg/ti_power_clock_config.o] Error 1
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-marm'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfloat-abi=hard'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfpu=vfpv3-d16'
+gmake: *** [syscfg/ti_board_open_close.o] Error 1
+Building file: "syscfg/ti_dpl_config.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/bin/aarch64-none-elf-gcc-9.2.1" -c -mcpu=cortex-r5 -marm -mfloat-abi=hard -mfpu=vfpv3-d16 -DSOC_AM64X -D_DEBUG_=1 -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7" -I"/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/source" -I"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/aarch64-none-elf/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-unused-but-set-variable -MMD -MP -MF"syscfg/ti_dpl_config.d_raw" -MT"syscfg/ti_dpl_config.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/Debug/syscfg"   -o"syscfg/ti_dpl_config.o" "syscfg/ti_dpl_config.c"
+subdir_rules.mk:43: recipe for target 'syscfg/ti_dpl_config.o' failed
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-marm'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfloat-abi=hard'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfpu=vfpv3-d16'
+gmake: *** [syscfg/ti_board_config.o] Error 1
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-marm'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfloat-abi=hard'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfpu=vfpv3-d16'
+gmake: *** [syscfg/ti_enet_config.o] Error 1
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-marm'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfloat-abi=hard'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfpu=vfpv3-d16'
+gmake: *** [syscfg/ti_enet_open_close.o] Error 1
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/bin/aarch64-none-elf-gcc-9.2.1" -c -mcpu=cortex-r5 -marm -mfloat-abi=hard -mfpu=vfpv3-d16 -DSOC_AM64X -D_DEBUG_=1 -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7" -I"/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/source" -I"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/aarch64-none-elf/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-unused-but-set-variable -MMD -MP -MF"syscfg/ti_drivers_config.d_raw" -MT"syscfg/ti_drivers_config.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/Debug/syscfg"   -o"syscfg/ti_drivers_config.o" "syscfg/ti_drivers_config.c"
+subdir_rules.mk:43: recipe for target 'syscfg/ti_drivers_config.o' failed
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-marm'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfloat-abi=hard'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfpu=vfpv3-d16'
+gmake: *** [syscfg/ti_enet_lwipif.o] Error 1
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-marm'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfloat-abi=hard'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfpu=vfpv3-d16'
+gmake: *** [main.o] Error 1
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-marm'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfloat-abi=hard'
+aarch64-none-elf-gcc-9.2.1: error: unrecognized command line option '-mfpu=vfpv3-d16'
+gmake: *** [syscfg/ti_enet_soc.o] Error 1
+Building file: "syscfg/ti_drivers_open_close.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/bin/aarch64-none-elf-gcc-9.2.1" -c -mcpu=cortex-r5 -marm -mfloat-abi=hard -mfpu=vfpv3-d16 -DSOC_AM64X -D_DEBUG_=1 -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7" -I"/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/source" -I"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/aarch64-none-elf/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-unused-but-set-variable -MMD -MP -MF"syscfg/ti_drivers_open_close.d_raw" -MT"syscfg/ti_drivers_open_close.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/Debug/syscfg"   -o"syscfg/ti_drivers_open_close.o" "syscfg/ti_drivers_open_close.c"
+subdir_rules.mk:43: recipe for target 'syscfg/ti_drivers_open_close.o' failed
+Building file: "syscfg/ti_pinmux_config.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/bin/aarch64-none-elf-gcc-9.2.1" -c -mcpu=cortex-r5 -marm -mfloat-abi=hard -mfpu=vfpv3-d16 -DSOC_AM64X -D_DEBUG_=1 -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7" -I"/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/source" -I"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/aarch64-none-elf/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-unused-but-set-variable -MMD -MP -MF"syscfg/ti_pinmux_config.d_raw" -MT"syscfg/ti_pinmux_config.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/Debug/syscfg"   -o"syscfg/ti_pinmux_config.o" "syscfg/ti_pinmux_config.c"
+subdir_rules.mk:43: recipe for target 'syscfg/ti_pinmux_config.o' failed
+Building file: "syscfg/ti_power_clock_config.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/bin/aarch64-none-elf-gcc-9.2.1" -c -mcpu=cortex-r5 -marm -mfloat-abi=hard -mfpu=vfpv3-d16 -DSOC_AM64X -D_DEBUG_=1 -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7" -I"/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/source" -I"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/aarch64-none-elf/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-unused-but-set-variable -MMD -MP -MF"syscfg/ti_power_clock_config.d_raw" -MT"syscfg/ti_power_clock_config.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/Debug/syscfg"   -o"syscfg/ti_power_clock_config.o" "syscfg/ti_power_clock_config.c"
+subdir_rules.mk:43: recipe for target 'syscfg/ti_power_clock_config.o' failed
+Building file: "syscfg/ti_board_open_close.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/bin/aarch64-none-elf-gcc-9.2.1" -c -mcpu=cortex-r5 -marm -mfloat-abi=hard -mfpu=vfpv3-d16 -DSOC_AM64X -D_DEBUG_=1 -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7" -I"/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/source" -I"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/aarch64-none-elf/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-unused-but-set-variable -MMD -MP -MF"syscfg/ti_board_open_close.d_raw" -MT"syscfg/ti_board_open_close.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/Debug/syscfg"   -o"syscfg/ti_board_open_close.o" "syscfg/ti_board_open_close.c"
+subdir_rules.mk:43: recipe for target 'syscfg/ti_board_open_close.o' failed
+Building file: "syscfg/ti_board_config.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/bin/aarch64-none-elf-gcc-9.2.1" -c -mcpu=cortex-r5 -marm -mfloat-abi=hard -mfpu=vfpv3-d16 -DSOC_AM64X -D_DEBUG_=1 -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7" -I"/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/source" -I"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/aarch64-none-elf/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-unused-but-set-variable -MMD -MP -MF"syscfg/ti_board_config.d_raw" -MT"syscfg/ti_board_config.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/Debug/syscfg"   -o"syscfg/ti_board_config.o" "syscfg/ti_board_config.c"
+subdir_rules.mk:43: recipe for target 'syscfg/ti_board_config.o' failed
+Building file: "syscfg/ti_enet_config.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/bin/aarch64-none-elf-gcc-9.2.1" -c -mcpu=cortex-r5 -marm -mfloat-abi=hard -mfpu=vfpv3-d16 -DSOC_AM64X -D_DEBUG_=1 -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7" -I"/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/source" -I"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/aarch64-none-elf/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-unused-but-set-variable -MMD -MP -MF"syscfg/ti_enet_config.d_raw" -MT"syscfg/ti_enet_config.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/Debug/syscfg"   -o"syscfg/ti_enet_config.o" "syscfg/ti_enet_config.c"
+subdir_rules.mk:43: recipe for target 'syscfg/ti_enet_config.o' failed
+Building file: "syscfg/ti_enet_open_close.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/bin/aarch64-none-elf-gcc-9.2.1" -c -mcpu=cortex-r5 -marm -mfloat-abi=hard -mfpu=vfpv3-d16 -DSOC_AM64X -D_DEBUG_=1 -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7" -I"/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/source" -I"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/aarch64-none-elf/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-unused-but-set-variable -MMD -MP -MF"syscfg/ti_enet_open_close.d_raw" -MT"syscfg/ti_enet_open_close.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/Debug/syscfg"   -o"syscfg/ti_enet_open_close.o" "syscfg/ti_enet_open_close.c"
+subdir_rules.mk:43: recipe for target 'syscfg/ti_enet_open_close.o' failed
+Building file: "syscfg/ti_enet_lwipif.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/bin/aarch64-none-elf-gcc-9.2.1" -c -mcpu=cortex-r5 -marm -mfloat-abi=hard -mfpu=vfpv3-d16 -DSOC_AM64X -D_DEBUG_=1 -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7" -I"/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/source" -I"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/aarch64-none-elf/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-unused-but-set-variable -MMD -MP -MF"syscfg/ti_enet_lwipif.d_raw" -MT"syscfg/ti_enet_lwipif.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/Debug/syscfg"   -o"syscfg/ti_enet_lwipif.o" "syscfg/ti_enet_lwipif.c"
+subdir_rules.mk:43: recipe for target 'syscfg/ti_enet_lwipif.o' failed
+Building file: "../main.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/bin/aarch64-none-elf-gcc-9.2.1" -c -mcpu=cortex-r5 -marm -mfloat-abi=hard -mfpu=vfpv3-d16 -DSOC_AM64X -D_DEBUG_=1 -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7" -I"/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/source" -I"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/aarch64-none-elf/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-unused-but-set-variable -MMD -MP -MF"main.d_raw" -MT"main.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/Debug/syscfg"   -o"main.o" "../main.c"
+subdir_rules.mk:7: recipe for target 'main.o' failed
+Building file: "syscfg/ti_enet_soc.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/bin/aarch64-none-elf-gcc-9.2.1" -c -mcpu=cortex-r5 -marm -mfloat-abi=hard -mfpu=vfpv3-d16 -DSOC_AM64X -D_DEBUG_=1 -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7" -I"/home/pops/ti/mcu_plus_sdk_am64x_08_06_00_43/source" -I"/home/pops/ti/gcc-arm-aarch64-none-eabi_9_2_1/aarch64-none-elf/include" -Og -ffunction-sections -fdata-sections -g -gdwarf-3 -gstrict-dwarf -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast -Wno-unused-but-set-variable -MMD -MP -MF"syscfg/ti_enet_soc.d_raw" -MT"syscfg/ti_enet_soc.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/Debug/syscfg"   -o"syscfg/ti_enet_soc.o" "syscfg/ti_enet_soc.c"
+subdir_rules.mk:43: recipe for target 'syscfg/ti_enet_soc.o' failed
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

@@ -1,0 +1,9 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+activeLaunchTarget=null\:---
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:New_configuration,org.eclipse.launchbar.core.descriptorType.default\:PWM_Pru0-0
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:dpl_demo_am64x-sk_r5fss0-0_nortos_gcc-armv7/activeLaunchMode=debug

@@ -1,0 +1,25 @@
+
+**** Build of configuration Debug for project MotorControlPru_0 ****
+
+/home/pops/ti/ccs1240/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building file: "../src/motor_control_pru0.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1240/ccs/ccs_base/pru/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruLibrary/src" --include_path="/home/pops/ti/pru-software-support-package/include/j721e" --include_path="/home/pops/ti/pru-software-support-package/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/MotorControlPru_0" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruLibrary/src" --include_path="/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/motor_control_pru0.d_raw" --obj_directory="src"  "../src/motor_control_pru0.c"
+"../src/motor_control_pru0.c", line 145: warning #179-D: variable "hit" was declared but never referenced
+"../src/motor_control_pru0.c", line 290: warning #179-D: variable "status" was declared but never referenced
+"../src/motor_control_pru0.c", line 364: warning #179-D: function "getEncoderValue" was declared but never referenced
+"../src/motor_control_pru0.c", line 216: warning #179-D: function "updatePid" was declared but never referenced
+"../src/motor_control_pru0.c", line 260: warning #179-D: function "initPid" was declared but never referenced
+"../src/motor_control_pru0.c", line 325: warning #179-D: function "initializeIntc" was declared but never referenced
+"../src/motor_control_pru0.c", line 288: warning #179-D: function "interruptSvc" was declared but never referenced
+Finished building: "../src/motor_control_pru0.c"
+ 
+Building target: "MotorControlPru_0.out"
+Invoking: PRU Linker
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little -z -m"MotorControlPru_0.map" --stack_size=0x100 -i"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/lib" -i"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MotorControlPru_0_linkInfo.xml" --rom_model -o "MotorControlPru_0.out" "./src/motor_control_pru0.obj" "../J721E_PRU0_intc_rscTbl.cmd"  -llibc.a 
+<Linking>
+Finished building target: "MotorControlPru_0.out"
+ 
+
+**** Build Finished ****

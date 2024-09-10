@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;RPM_MessageEcho_0/src/main.c&apos; to &apos;rpmEcho_msg.c&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main.c" name="rpmEcho_msg.c" stamp="1687036303510" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;RPM_MessageEcho_0/src/rpmEcho_msg.c&apos; to &apos;rpmMsg_pru0.c&apos;" description="Rename resource &apos;rpmEcho_msg.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/rpmEcho_msg.c" name="rpmMsg_pru0.c" stamp="1687036658058" updateReferences="true"/>
+</session>

@@ -1,0 +1,7 @@
+1692551494867	Delete resource 'EHRPWM_Pru0/src/intc_map_0.h'
+1692551510291	Delete resource 'EHRPWM_Pru0/src/resource_table.h'
+1692551543640	Delete resource 'EHRPWM_Pru0/AM64x_PRU0_intc_rscTbl.cmd'
+1692721971144	Rename resource 'PWM_Pru0'
+1693068408571	Rename resource 'MotorControlPru_0'
+1693068500752	Rename resource 'MotorControlPru0'
+1693068523412	Rename resource 'MotorControlPru_1'

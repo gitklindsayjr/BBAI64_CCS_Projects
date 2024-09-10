@@ -1,0 +1,19 @@
+
+**** Build of configuration Debug for project RPM_MessageEcho_1 ****
+
+/home/pops/ti/ccs1230/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building file: "../src/rpmMsg_pru1.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1230/ccs/ccs_base/pru/include" --include_path="/home/pops/ti/pru-software-support-package/include" --include_path="/home/pops/ti/pru-software-support-package/include/j721e" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/RPM_MessageEcho_1" --include_path="/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/rpmMsg_pru1.d_raw" --obj_directory="src"  "../src/rpmMsg_pru1.c"
+Finished building: "../src/rpmMsg_pru1.c"
+ 
+Building target: "RPM_MessageEcho_1.out"
+Invoking: PRU Linker
+"/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little -z -m"RPM_MessageEcho_1.map" -i"/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/lib" -i"/home/pops/ti/ccs1230/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="RPM_MessageEcho_1_linkInfo.xml" --rom_model -o "RPM_MessageEcho_1.out" "./src/pru_rpmsg.obj" "./src/pru_virtqueue.obj" "./src/rpmMsg_pru1.obj" "../J721E_PRU1_intc_rscTbl.cmd"  -llibc.a 
+<Linking>
+warning #10210-D: creating ".stack" section with default size of 0x100; use the -stack option to change the default size
+Finished building target: "RPM_MessageEcho_1.out"
+ 
+
+**** Build Finished ****

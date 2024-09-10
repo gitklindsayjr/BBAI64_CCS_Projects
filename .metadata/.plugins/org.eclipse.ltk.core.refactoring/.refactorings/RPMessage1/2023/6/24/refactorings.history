@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RPM_MessageEcho_1/src/main.c&apos; to &apos;rpmMsg_pru1.c&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main.c" name="rpmMsg_pru1.c" stamp="1687037939841" updateReferences="true"/>
+</session>

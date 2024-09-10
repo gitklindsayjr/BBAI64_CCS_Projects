@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Each subdirectory must supply rules for building sources it contributes
+src/%.obj: ../src/%.c $(GEN_OPTS) | $(GEN_FILES) $(GEN_MISC_FILES)
+	@echo 'Building file: "$<"'
+	@echo 'Invoking: PRU Compiler'
+	"/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1250/ccs/ccs_base/pru/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/APWMpru0" --include_path="/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruLibrary/src" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/src/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/examples/PRU_RPMsg_Echo_Interrupt0" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/$(basename $(<F)).d_raw" --obj_directory="src" $(GEN_OPTS__FLAG) "$(shell echo $<)"
+	@echo 'Finished building: "$<"'
+	@echo ' '
+
+src/pru_rpmsg.obj: /home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/src/lib/src/rpmsg_lib/pru_rpmsg.c $(GEN_OPTS) | $(GEN_FILES) $(GEN_MISC_FILES)
+	@echo 'Building file: "$<"'
+	@echo 'Invoking: PRU Compiler'
+	"/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1250/ccs/ccs_base/pru/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/APWMpru0" --include_path="/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruLibrary/src" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/src/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/examples/PRU_RPMsg_Echo_Interrupt0" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/$(basename $(<F)).d_raw" --obj_directory="src" $(GEN_OPTS__FLAG) "$(shell echo $<)"
+	@echo 'Finished building: "$<"'
+	@echo ' '
+
+src/pru_virtqueue.obj: /home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/src/lib/src/rpmsg_lib/pru_virtqueue.c $(GEN_OPTS) | $(GEN_FILES) $(GEN_MISC_FILES)
+	@echo 'Building file: "$<"'
+	@echo 'Invoking: PRU Compiler'
+	"/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1250/ccs/ccs_base/pru/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/APWMpru0" --include_path="/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruLibrary/src" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/src/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/examples/PRU_RPMsg_Echo_Interrupt0" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/$(basename $(<F)).d_raw" --obj_directory="src" $(GEN_OPTS__FLAG) "$(shell echo $<)"
+	@echo 'Finished building: "$<"'
+	@echo ' '
+
+

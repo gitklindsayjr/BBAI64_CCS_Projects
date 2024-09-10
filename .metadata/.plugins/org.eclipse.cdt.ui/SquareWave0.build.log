@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project SquareWave0 ****
+
+/home/pops/ti/ccs1250/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building file: "../src/square_wave0.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/SquareWave0" --include_path="/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --include_path="/home/pops/ti/ccs1250/ccs/ccs_base/pru/include" --include_path="/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruLibrary/src" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/src/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/examples/PRU_RPMsg_Echo_Interrupt0" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/square_wave0.d_raw" --obj_directory="src"  "../src/square_wave0.c"
+Finished building: "../src/square_wave0.c"
+ 
+Building target: "SquareWave0.out"
+Invoking: PRU Linker
+"/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little -z -m"SquareWave0.map" --stack_size=0x100 -i"/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/lib" -i"/home/pops/MicroControllers/Beaglebone64_Prus/PruLibrary/Debug/src" -i"/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SquareWave0_linkInfo.xml" --rom_model -o "SquareWave0.out" "./src/pru_rpmsg.obj" "./src/pru_virtqueue.obj" "./src/square_wave0.obj" "/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/examples/PRU_RPMsg_Echo_Interrupt0/J721E_PRU0_intc_rscTbl.cmd"  -llibc.a -lpru_gpio.obj 
+<Linking>
+Finished building target: "SquareWave0.out"
+ 
+
+**** Build Finished ****

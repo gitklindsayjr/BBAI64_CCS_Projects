@@ -1,0 +1,19 @@
+
+**** Build of configuration Debug for project EHRPWM_Pru0 ****
+
+/home/pops/ti/ccs1240/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building file: "../src/pwm.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1240/ccs/ccs_base/pru/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/PruLibrary/src" --include_path="/home/pops/ti/pru-software-support-package/include" --include_path="/home/pops/ti/pru-software-support-package/include/j721e" --include_path="/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/EHRPWM_Pru0" --include_path="/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/pwm.d_raw" --obj_directory="src"  "../src/pwm.c"
+"../src/pwm.c", line 68: warning #179-D: variable "pulseWidth" was declared but never referenced
+Finished building: "../src/pwm.c"
+ 
+Building target: "EHRPWM_Pru0.out"
+Invoking: PRU Linker
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little -z -m"EHRPWM_Pru0.map" --stack_size=0x100 -i"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/lib" -i"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="EHRPWM_Pru0_linkInfo.xml" --rom_model -o "EHRPWM_Pru0.out" "./src/pwm.obj" "../J721E_PRU0_intc_rscTbl.cmd"  -llibc.a 
+<Linking>
+Finished building target: "EHRPWM_Pru0.out"
+ 
+
+**** Build Finished ****

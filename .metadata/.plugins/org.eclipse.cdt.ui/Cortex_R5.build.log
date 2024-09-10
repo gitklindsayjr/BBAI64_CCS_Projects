@@ -1,0 +1,73 @@
+
+**** Build of configuration Debug__GNU for project Cortex_R5 ****
+
+/home/pops/ti/ccs1240/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building file: "../r5_sys/CacheP_armv7r_asm.s"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc-7.2.1" -c -I"/home/pops/MicroControllers/Beaglebone64_Prus/Cortex_R5" -I"/home/pops/MicroControllers/Beaglebone64_Prus/Cortex_R5/r5_sys" -I"/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall  -o"r5_sys/CacheP_armv7r_asm.o" "../r5_sys/CacheP_armv7r_asm.s"
+Finished building: "../r5_sys/CacheP_armv7r_asm.s"
+ 
+Building file: "../r5_sys/HwiP_armv7r_asm.s"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc-7.2.1" -c -I"/home/pops/MicroControllers/Beaglebone64_Prus/Cortex_R5" -I"/home/pops/MicroControllers/Beaglebone64_Prus/Cortex_R5/r5_sys" -I"/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall  -o"r5_sys/HwiP_armv7r_asm.o" "../r5_sys/HwiP_armv7r_asm.s"
+Finished building: "../r5_sys/HwiP_armv7r_asm.s"
+ 
+Building file: "../r5_sys/MpuP_armv7r_asm.s"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc-7.2.1" -c -I"/home/pops/MicroControllers/Beaglebone64_Prus/Cortex_R5" -I"/home/pops/MicroControllers/Beaglebone64_Prus/Cortex_R5/r5_sys" -I"/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall  -o"r5_sys/MpuP_armv7r_asm.o" "../r5_sys/MpuP_armv7r_asm.s"
+Finished building: "../r5_sys/MpuP_armv7r_asm.s"
+ 
+Building file: "../r5_sys/CacheP_armv7r.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc-7.2.1" -c -I"/home/pops/MicroControllers/Beaglebone64_Prus/Cortex_R5" -I"/home/pops/MicroControllers/Beaglebone64_Prus/Cortex_R5/r5_sys" -I"/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"r5_sys/CacheP_armv7r.d_raw" -MT"r5_sys/CacheP_armv7r.o"  -fno-exceptions -mcpu=cortex-r5 -marm -mfloat-abi=hard -O3  -o"r5_sys/CacheP_armv7r.o" "../r5_sys/CacheP_armv7r.c"
+Finished building: "../r5_sys/CacheP_armv7r.c"
+ 
+Building file: "../src/test.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc-7.2.1" -c -I"/home/pops/MicroControllers/Beaglebone64_Prus/Cortex_R5" -I"/home/pops/MicroControllers/Beaglebone64_Prus/Cortex_R5/r5_sys" -I"/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"src/test.d_raw" -MT"src/test.o"  -fno-exceptions -mcpu=cortex-r5 -marm -mfloat-abi=hard -O3  -o"src/test.o" "../src/test.c"
+Finished building: "../src/test.c"
+ 
+Building file: "../r5_sys/MpuP_armv7r.c"
+Invoking: GNU Compiler
+"/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc-7.2.1" -c -I"/home/pops/MicroControllers/Beaglebone64_Prus/Cortex_R5" -I"/home/pops/MicroControllers/Beaglebone64_Prus/Cortex_R5/r5_sys" -I"/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -MMD -MP -MF"r5_sys/MpuP_armv7r.d_raw" -MT"r5_sys/MpuP_armv7r.o"  -fno-exceptions -mcpu=cortex-r5 -marm -mfloat-abi=hard -O3  -o"r5_sys/MpuP_armv7r.o" "../r5_sys/MpuP_armv7r.c"
+Finished building: "../r5_sys/MpuP_armv7r.c"
+ 
+Building target: "Cortex_R5.out"
+Invoking: GNU Linker
+"/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc-7.2.1" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -Wl,-Map,"Cortex_R5.map" -o"Cortex_R5.out" "./r5_sys/CacheP_armv7r.o" "./r5_sys/CacheP_armv7r_asm.o" "./r5_sys/HwiP_armv7r_asm.o" "./r5_sys/MpuP_armv7r.o" "./r5_sys/MpuP_armv7r_asm.o" "./src/test.o"  -Wl,--start-group -lc -Wl,--end-group 
+makefile:141: recipe for target 'Cortex_R5.out' failed
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/bin/ld: error: ./r5_sys/CacheP_armv7r.o uses VFP register arguments, Cortex_R5.out does not
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/bin/ld: failed to merge target specific data of file ./r5_sys/CacheP_armv7r.o
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/bin/ld: error: ./r5_sys/CacheP_armv7r_asm.o: Conflicting architecture profiles A/R
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/bin/ld: failed to merge target specific data of file ./r5_sys/CacheP_armv7r_asm.o
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/bin/ld: error: ./r5_sys/MpuP_armv7r.o uses VFP register arguments, Cortex_R5.out does not
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/bin/ld: failed to merge target specific data of file ./r5_sys/MpuP_armv7r.o
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/bin/ld: error: ./r5_sys/MpuP_armv7r_asm.o: Conflicting architecture profiles A/R
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/bin/ld: failed to merge target specific data of file ./r5_sys/MpuP_armv7r_asm.o
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/bin/ld: error: ./src/test.o uses VFP register arguments, Cortex_R5.out does not
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/bin/ld: failed to merge target specific data of file ./src/test.o
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): In function `exit':
+exit.c:(.text.exit+0x2c): undefined reference to `_exit'
+./src/test.o: In function `Reset_Handler':
+test.c:(.boot.reset+0x34): undefined reference to `__stack'
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/crt0.o: In function `_start':
+(.text+0xf8): undefined reference to `__stack'
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/libc.a(lib_a-sbrkr.o): In function `_sbrk_r':
+sbrkr.c:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/libc.a(lib_a-closer.o): In function `_close_r':
+closer.c:(.text._close_r+0x18): undefined reference to `_close'
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/libc.a(lib_a-lseekr.o): In function `_lseek_r':
+lseekr.c:(.text._lseek_r+0x24): undefined reference to `_lseek'
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/libc.a(lib_a-readr.o): In function `_read_r':
+readr.c:(.text._read_r+0x24): undefined reference to `_read'
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/libc.a(lib_a-fstatr.o): In function `_fstat_r':
+fstatr.c:(.text._fstat_r+0x20): undefined reference to `_fstat'
+/home/pops/ti/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/libc.a(lib_a-isattyr.o): In function `_isatty_r':
+isattyr.c:(.text._isatty_r+0x18): undefined reference to `_isatty'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [Cortex_R5.out] Error 1
+gmake: *** [all] Error 2
+makefile:137: recipe for target 'all' failed
+
+**** Build Finished ****

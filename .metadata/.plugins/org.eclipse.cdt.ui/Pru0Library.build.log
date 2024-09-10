@@ -1,0 +1,34 @@
+
+**** Build of configuration Debug for project Pru0Library ****
+
+/home/pops/ti/ccs1240/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1240/ccs/ccs_base/pru/include" --include_path="/home/pops/ti/pru-software-support-package/include/j721e" --include_path="/home/pops/ti/pru-software-support-package/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/Pru0Library" --include_path="/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../src/pru_virtqueue.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1240/ccs/ccs_base/pru/include" --include_path="/home/pops/ti/pru-software-support-package/include/j721e" --include_path="/home/pops/ti/pru-software-support-package/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/Pru0Library" --include_path="/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/pru_virtqueue.d_raw" --obj_directory="src"  "../src/pru_virtqueue.c"
+Finished building: "../src/pru_virtqueue.c"
+ 
+Building file: "../src/pru_rpmsg.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1240/ccs/ccs_base/pru/include" --include_path="/home/pops/ti/pru-software-support-package/include/j721e" --include_path="/home/pops/ti/pru-software-support-package/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/Pru0Library" --include_path="/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/pru_rpmsg.d_raw" --obj_directory="src"  "../src/pru_rpmsg.c"
+Finished building: "../src/pru_rpmsg.c"
+ 
+Building file: "../src/pru_gpio.c"
+Invoking: PRU Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1240/ccs/ccs_base/pru/include" --include_path="/home/pops/ti/pru-software-support-package/include/j721e" --include_path="/home/pops/ti/pru-software-support-package/include" --include_path="/home/pops/MicroControllers/Beaglebone64_Prus/Pru0Library" --include_path="/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/pru_gpio.d_raw" --obj_directory="src"  "../src/pru_gpio.c"
+Finished building: "../src/pru_gpio.c"
+ 
+Building target: "Pru0Library.lib"
+Invoking: PRU Archiver
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/arpru" r "Pru0Library.lib" "./main.obj" "./src/pru_gpio.obj" "./src/pru_rpmsg.obj" "./src/pru_virtqueue.obj" 
+  ==>  new archive 'Pru0Library.lib'
+  ==>  building archive 'Pru0Library.lib'
+Finished building target: "Pru0Library.lib"
+ 
+
+**** Build Finished ****

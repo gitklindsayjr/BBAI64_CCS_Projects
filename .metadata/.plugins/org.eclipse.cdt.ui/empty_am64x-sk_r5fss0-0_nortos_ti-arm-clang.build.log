@@ -1,0 +1,121 @@
+
+**** Build of configuration Debug for project empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang ****
+
+/home/pops/ti/ccs1240/ccs/utils/bin/gmake -k -j 8 all -O 
+ 
+Building file: "../example.syscfg"
+Invoking: SysConfig
+"/home/pops/ti/ccs1240/ccs/utils/sysconfig_1.17.0/sysconfig_cli.sh" -s "/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/.metadata/product.json" --script "/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/example.syscfg" --context "r5fss0-0" -o "syscfg" --part Default --package ALV --compiler ticlang
+Running script...
+Validating...
+info: /kernel/dpl/debug_log uartLog.baudRate: Actual Baudrate Possible: 115385 (0 % error)
+Generating Code (example.syscfg)...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_dpl_config.c...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_dpl_config.h...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_drivers_config.c...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_drivers_config.h...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_drivers_open_close.c...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_drivers_open_close.h...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_pinmux_config.c...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_power_clock_config.c...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_board_config.c...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_board_config.h...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_board_open_close.c...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_board_open_close.h...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_enet_config.c...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_enet_config.h...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_enet_open_close.c...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_enet_open_close.h...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_enet_soc.c...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_enet_lwipif.c...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_enet_lwipif.h...
+Writing /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg/ti_pru_io_config.inc...
+Finished building: "../example.syscfg"
+ 
+Building file: "../empty.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -c -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -I"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/include/c" -I"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source" -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -MMD -MP -MF"empty.d_raw" -MT"empty.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg"   -o"empty.o" "../empty.c"
+Finished building: "../empty.c"
+ 
+Building file: "syscfg/ti_power_clock_config.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -c -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -I"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/include/c" -I"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source" -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -MMD -MP -MF"syscfg/ti_power_clock_config.d_raw" -MT"syscfg/ti_power_clock_config.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg"   -o"syscfg/ti_power_clock_config.o" "syscfg/ti_power_clock_config.c"
+Finished building: "syscfg/ti_power_clock_config.c"
+ 
+Building file: "syscfg/ti_drivers_config.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -c -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -I"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/include/c" -I"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source" -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -MMD -MP -MF"syscfg/ti_drivers_config.d_raw" -MT"syscfg/ti_drivers_config.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg"   -o"syscfg/ti_drivers_config.o" "syscfg/ti_drivers_config.c"
+Finished building: "syscfg/ti_drivers_config.c"
+ 
+Building file: "syscfg/ti_dpl_config.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -c -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -I"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/include/c" -I"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source" -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -MMD -MP -MF"syscfg/ti_dpl_config.d_raw" -MT"syscfg/ti_dpl_config.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg"   -o"syscfg/ti_dpl_config.o" "syscfg/ti_dpl_config.c"
+Finished building: "syscfg/ti_dpl_config.c"
+ 
+Building file: "syscfg/ti_drivers_open_close.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -c -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -I"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/include/c" -I"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source" -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -MMD -MP -MF"syscfg/ti_drivers_open_close.d_raw" -MT"syscfg/ti_drivers_open_close.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg"   -o"syscfg/ti_drivers_open_close.o" "syscfg/ti_drivers_open_close.c"
+Finished building: "syscfg/ti_drivers_open_close.c"
+ 
+Building file: "syscfg/ti_board_config.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -c -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -I"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/include/c" -I"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source" -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -MMD -MP -MF"syscfg/ti_board_config.d_raw" -MT"syscfg/ti_board_config.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg"   -o"syscfg/ti_board_config.o" "syscfg/ti_board_config.c"
+Finished building: "syscfg/ti_board_config.c"
+ 
+Building file: "syscfg/ti_board_open_close.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -c -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -I"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/include/c" -I"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source" -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -MMD -MP -MF"syscfg/ti_board_open_close.d_raw" -MT"syscfg/ti_board_open_close.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg"   -o"syscfg/ti_board_open_close.o" "syscfg/ti_board_open_close.c"
+Finished building: "syscfg/ti_board_open_close.c"
+ 
+Building file: "syscfg/ti_enet_config.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -c -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -I"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/include/c" -I"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source" -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -MMD -MP -MF"syscfg/ti_enet_config.d_raw" -MT"syscfg/ti_enet_config.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg"   -o"syscfg/ti_enet_config.o" "syscfg/ti_enet_config.c"
+Finished building: "syscfg/ti_enet_config.c"
+ 
+Building file: "syscfg/ti_enet_open_close.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -c -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -I"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/include/c" -I"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source" -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -MMD -MP -MF"syscfg/ti_enet_open_close.d_raw" -MT"syscfg/ti_enet_open_close.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg"   -o"syscfg/ti_enet_open_close.o" "syscfg/ti_enet_open_close.c"
+Finished building: "syscfg/ti_enet_open_close.c"
+ 
+Building file: "syscfg/ti_enet_soc.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -c -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -I"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/include/c" -I"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source" -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -MMD -MP -MF"syscfg/ti_enet_soc.d_raw" -MT"syscfg/ti_enet_soc.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg"   -o"syscfg/ti_enet_soc.o" "syscfg/ti_enet_soc.c"
+Finished building: "syscfg/ti_enet_soc.c"
+ 
+Building file: "syscfg/ti_enet_lwipif.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -c -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -I"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/include/c" -I"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source" -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -MMD -MP -MF"syscfg/ti_enet_lwipif.d_raw" -MT"syscfg/ti_enet_lwipif.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg"   -o"syscfg/ti_enet_lwipif.o" "syscfg/ti_enet_lwipif.c"
+Finished building: "syscfg/ti_enet_lwipif.c"
+ 
+Building file: "syscfg/ti_pinmux_config.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -c -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -I"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/include/c" -I"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source" -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -MMD -MP -MF"syscfg/ti_pinmux_config.d_raw" -MT"syscfg/ti_pinmux_config.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg"   -o"syscfg/ti_pinmux_config.o" "syscfg/ti_pinmux_config.c"
+Finished building: "syscfg/ti_pinmux_config.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -c -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -I"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/include/c" -I"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source" -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -MMD -MP -MF"main.d_raw" -MT"main.o" -I"/home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/syscfg"   -o"main.o" "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "r5f.out"
+Invoking: Arm Linker
+"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/bin/tiarmclang" -mcpu=cortex-r5 -mfloat-abi=hard -mfpu=vfpv3-d16 -mlittle-endian -mthumb -DSOC_AM64X -D_DEBUG_=1 -g -Wall -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wl,-m"empty.Debug.map" -Wl,-i"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source/kernel/nortos/lib" -Wl,-i"/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/source/drivers/lib" -Wl,-i"/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS/lib" -Wl,--reread_libs -Wl,--diag_suppress=10063 -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang_linkInfo.xml" -Wl,--ram_model -o "r5f.out" "./empty.o" "./syscfg/ti_dpl_config.o" "./syscfg/ti_drivers_config.o" "./syscfg/ti_drivers_open_close.o" "./syscfg/ti_pinmux_config.o" "./syscfg/ti_power_clock_config.o" "./syscfg/ti_board_config.o" "./syscfg/ti_board_open_close.o" "./syscfg/ti_enet_config.o" "./syscfg/ti_enet_open_close.o" "./syscfg/ti_enet_soc.o" "./syscfg/ti_enet_lwipif.o" "./main.o" "../linker.cmd"  -Wl,-lnortos.am64x.r5f.ti-arm-clang.debug.lib -Wl,-ldrivers.am64x.r5f.ti-arm-clang.debug.lib -Wl,-llibc.a -Wl,-llibsysbm.a 
+Finished building target: "r5f.out"
+ 
+/home/pops/ti/ccs1240/ccs/utils/bin/gmake -C /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang -f makefile_ccs_bootimage_gen OUTNAME=r5f PROFILE=Debug MCU_PLUS_SDK_PATH=/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30 CG_TOOL_ROOT=/home/pops/ti/ccs1240/ccs/tools/compiler/ti-cgt-armllvm_2.1.3.LTS CCS_INSTALL_DIR=/home/pops/ti/ccs1240/ccs CCS_IDE_MODE=desktop DEVICE=am64x
+Boot image: am64x:r5fss0-0:nortos:ti-arm-clang /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.appimage ...
+/home/pops/ti/ccs1240/ccs/tools/node/node /home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/tools/boot/out2rprc/elf2rprc.js Debug/r5f.out >> Debug/temp_stdout_Debug.txt
+cp r5f.rprc /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.rprc
+cp /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.rprc /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.rprc_tmp
+rm -f /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.rprc
+/home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/tools/boot/xipGen/xipGen.out -i /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.rprc_tmp -o /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.rprc -x /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.rprc_xip --flash-start-addr 0x60000000 -v > Debug/temp_stdout_Debug.txt
+/home/pops/ti/ccs1240/ccs/tools/node/node /home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/tools/boot/multicoreImageGen/multicoreImageGen.js --devID 55 --out /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.appimage /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.rprc@4  >> Debug/temp_stdout_Debug.txt
+/home/pops/ti/ccs1240/ccs/tools/node/node /home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/tools/boot/multicoreImageGen/multicoreImageGen.js --devID 55 --out /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.appimage_xip /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.rprc_xip@4  >> Debug/temp_stdout_Debug.txt
+python3 /home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/tools/boot/signing/appimage_x509_cert_gen.py --bin /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.appimage --authtype 1 --key /home/pops/ti/mcu_plus_sdk_am64x_09_00_00_30/tools/boot/signing/rom_degenerateKey.pem --output /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.appimage.hs_fs
+Generating certificate for /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.appimage ...
+rm -f /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.rprc_tmp
+Boot image: am64x:r5fss0-0:nortos:ti-arm-clang /home/pops/MicroControllers/Beaglebone64_Prus/empty_am64x-sk_r5fss0-0_nortos_ti-arm-clang/Debug/r5f.appimage.hs_fs Done !!!
+.
+ 
+
+**** Build Finished ****
