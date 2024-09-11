@@ -1,0 +1,9 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+/home/pops/BBAI64_CCS_Projects/PruSoftwareSupport/examples/PRU_RPMsg_Echo_Interrupt0/J721E_PRU0_intc_rscTbl.cmd 
+
+

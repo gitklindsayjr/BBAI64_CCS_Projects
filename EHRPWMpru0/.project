@@ -24,4 +24,21 @@
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>J721E_PRU0_intc_rscTbl.cmd</name>
+			<type>1</type>
+			<location>/home/pops/BBAI64_CCS_Projects/PruSoftwareSupport/examples/PRU_RPMsg_Echo_Interrupt0/J721E_PRU0_intc_rscTbl.cmd</location>
+		</link>
+		<link>
+			<name>src/pru_rpmsg.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-CCS_INSTALL_ROOT/BBAI64_CCS_Projects/PruSoftwareSupport/src/lib/src/rpmsg_lib/pru_rpmsg.c</locationURI>
+		</link>
+		<link>
+			<name>src/pru_virtqueue.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-CCS_INSTALL_ROOT/BBAI64_CCS_Projects/PruSoftwareSupport/src/lib/src/rpmsg_lib/pru_virtqueue.c</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

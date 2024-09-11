@@ -5,3 +5,7 @@
 1725837717602	Delete resource 'SquareWave1/src/pru_virtqueue.c'
 1725909663765	Delete resource 'APWMpru0/src/intc_map_0.h'
 1725909667569	Delete resource 'APWMpru0/src/resource_table.h'
+1726012626398	Delete resource 'EHRPWMpru0/J721E_PRU0_intc_rscTbl.cmd'
+1726013274401	Delete resource 'EHRPWMpru0/src/intc_map_0.h'
+1726013277808	Delete resource 'EHRPWMpru0/src/resource_table.h'
+1726013290005	Delete resource 'EHRPWMpru0/src/sys_pwmss.h'
