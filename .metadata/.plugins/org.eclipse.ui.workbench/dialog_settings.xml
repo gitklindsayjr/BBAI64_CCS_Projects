@@ -25,8 +25,9 @@
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_VIRTUAL_FOLDERS_ID" value="true"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_LINKS_IN_WORKSPACE_ID" value="true"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_PATH_VARIABLE_SELECTED_ID" value="true"/>
-		<item key="WizardFileSystemResourceImportPage1.STORE_PATH_VARIABLE_NAME_ID" value="PROJECT_LOC"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_PATH_VARIABLE_NAME_ID" value="CCS_INSTALL_ROOT"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/pops/BBAI64_CCS_Projects/PruSoftwareSupport/src/lib/src/rpmsg_lib"/>
 			<item value="/home/pops/MicroControllers/Beaglebone64_Prus/PruSoftwareSupport/src/lib/src/rpmsg_lib"/>
 			<item value="/home/pops/ti/pru-software-support-package"/>
 			<item value="/home/pops/ti/pru-software-support-package/include"/>
