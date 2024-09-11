@@ -1,0 +1,5 @@
+This repsoitory contains all the necessary files to create a Code Composer Studio project, version 12.5. The project contaians the source code for ICCSG0:Pru0, Pru1 on the BBAI64.
+
+Current Tested Projects: kernel version 5.10.168-ti-r103, bbai64-debian-11.7-xfce-arm64-2023-12-03 kernel version 5.10.168-ti-r103, bbai64-debian-12.2-minimal-arm64-2023-10-07 after replacing the /opt/source/dtb-5.10-ti/src/arm64/. and /overlays with kernel version 5.10.168-ti-r103, bbai-debian-11.7 device trees. Refer to: https://github.com/kevinacahalan/bbai64_sketch_dt_setup_5_10
+
+APWMRu0 -- Uses PRU PWM on pin P8_15 with the /boot/firmware/extconf/extlinux.conf set to MotorControl.dts SquareWave0 -- Uses _r30 bit 16 on P8_12 and on GPIO0 62 P8_16 to generate a Square Wave that can be controlled using the /dev/remoteproc/rpmsg_pru30 facility. Refer to comments within source files. SquareWave1 -- Uses _r31 bit 13 on P8_20 and on GPIO0 75 P8_14 to generate a Square Wave that can be controlled using the /dev/remoteproc/rpmsg_pru31 facility. Refer to comments within source files. PruLibrary -- Required for include files and a linked object Debug/src/*.objs

@@ -41,7 +41,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <pru_intc.h>
+#include <j721e/pru_intc.h>
 #include <rsc_types.h>
 #include <pru_cfg.h>
 #include <sys_pwmss.h>
@@ -70,6 +70,10 @@ volatile register uint32_t __R31;
 */
 
 #ifdef RPMSG_CONTROL
+/* The following code was copied and pasted from the:
+ * ~/ti/pru-software-support-package/examples/j721ePRU_RPMsg_Echo_interrupt0/main.c
+ * lines 41 - 72
+ */
     /* Host-0 Interrupt sets bit 30 in register R31 */
     #define HOST_INT            ((uint32_t) 1 << 30)
     /* The PRU-ICSS system events used for RPMsg are defined in the Linux device tree
@@ -80,14 +84,16 @@ volatile register uint32_t __R31;
     /* Using the name 'rpmsg-pru' will probe the rpmsg_pru driver found at linux-x.y.z/drivers/rpmsg/rpmsg_pru.c */
     #define CHAN_NAME           "rpmsg-pru"
     #define CHAN_PORT           30
+    #define XSTR(x)             #x
+    #define CHAN_DESC(x)        "Channel "XSTR(x)
     /* Used to make sure the Linux drivers are ready for RPMsg communication. Found at linux-x.y.z/include/uapi/linux/virtio_config.h */
-   #define VIRTIO_CONFIG_S_DRIVER_OK   4
-/* RPMsg variables */
-    struct pru_rpmsg_transport transport;
-    uint16_t src, dst, len;
+    #define VIRTIO_CONFIG_S_DRIVER_OK   4
+
+uint8_t payload[RPMSG_MESSAGE_SIZE];
 #endif
 
 void initPwm(void);
+int  char2int(uint8_t *cStr, size_t length);
 
 void main(void)
 {
@@ -96,7 +102,14 @@ void main(void)
     uint32_t dutyCycle = 0;
 
 #ifdef RPMSG_CONTROL
+    /* The following code was copied and pasted from the:
+     * ~/ti/pru-software-support-package/examples/j721ePRU_RPMsg_Echo_interrupt0/main.c
+     * lines 79 - 94
+     */
+    struct pru_rpmsg_transport transport;
+    uint16_t src, dst, len;
     volatile uint8_t *status;
+
     __R31 = 0x00000000; // Clear any pending interrupts
     __R30 = 0x00000000; // Clear any pending interrupts
 
@@ -111,7 +124,7 @@ void main(void)
     pru_rpmsg_init(&transport, &resourceTable.rpmsg_vring0, &resourceTable.rpmsg_vring1, TO_ARM_HOST, FROM_ARM_HOST);
 
     /* Create the RPMsg channel between the PRU and ARM user space using the transport structure. */
-    while (pru_rpmsg_channel(RPMSG_NS_CREATE, &transport, CHAN_NAME, CHAN_PORT) != PRU_RPMSG_SUCCESS);
+    while (pru_rpmsg_channel(RPMSG_NS_CREATE, &transport, CHAN_NAME, CHAN_DESC(CHAN_PORT), CHAN_PORT) != PRU_RPMSG_SUCCESS);
 #endif
 
     GPIO0.DIR23_bit.OE_bit30 = 0;      // BBAI-64 Connector P8_16 set as output
@@ -129,14 +142,19 @@ void main(void)
     while(1)
     {
     #ifdef RPMSG_CONTROL
+        /* The following code was copied and pasted from the:
+         * ~/ti/pru-software-support-package/examples/j721ePRU_RPMsg_Echo_interrupt0/main.c
+         * lines 96 - 106
+         */
         if (__R31 & HOST_INT)
         {
             /* Clear the event status */
             CT_INTC.STATUS_CLR_INDEX_REG_bit.STATUS_CLR_INDEX = FROM_ARM_HOST;
             /* Receive all available messages, multiple messages can be sent per kick */
-            while(pru_rpmsg_receive(&transport, &src, &dst, &pulseWidth, &len) == PRU_RPMSG_SUCCESS)
+            while(pru_rpmsg_receive(&transport, &src, &dst, payload, &len) == PRU_RPMSG_SUCCESS)
             {  /* Echo the message back to the same address from which we just received */
-                pru_rpmsg_send(&transport, dst, src, (uint32_t *)&pulseWidth, sizeof(pulseWidth));
+                pru_rpmsg_send(&transport, dst, src, payload, len);
+                pulseWidth = char2int(payload, len); /* Convert to integer */
             }
         }
     #endif
@@ -191,5 +209,40 @@ void initPwm(void) // pru_ecap.h
 //    EPWM4.CMPA = 3125; // 50% Duty cycle
     EPWM4.CMPB = 3125; // 50% Duty cycle
 
+}
+/* This function is needed to convert un-terminated (no null char) ASCII string to number.
+ * Library functions like atoi(), or strtol() don't work.
+ */
+int char2int (uint8_t *cStr, size_t n)
+{
+    int number = 0;
+    int mult = 1;
+
+    n = (int)n < 0 ? -n : n; /* quick absolute value check  */
+    /* for each character in the string */
+    while (n--)
+    {
+        /* if not digit or '-', check if number > 0, break or continue */
+        if((cStr[n] < '0' || cStr[n] > '9') && cStr[n] != '-')
+        {
+            if (number)
+                break;
+            else
+                continue;
+        }
+        if (cStr[n] == '-')
+        {   /* if '-' if number, negate, break */
+            if (number) {
+                number = -number;
+                break;
+            }
+        }
+        else
+        {   /* convert digit to numeric value   */
+            number += (cStr[n] - '0') * mult;
+            mult *= 10;
+        }
+    }
+    return number;
 }
 
