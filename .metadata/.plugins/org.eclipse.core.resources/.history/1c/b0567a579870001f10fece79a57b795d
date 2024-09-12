@@ -1,0 +1,36 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../src/ehrpwm.c \
+/home/pops/BBAI64_CCS_Projects/PruSoftwareSupport/src/lib/src/rpmsg_lib/pru_rpmsg.c \
+/home/pops/BBAI64_CCS_Projects/PruSoftwareSupport/src/lib/src/rpmsg_lib/pru_virtqueue.c 
+
+C_DEPS += \
+./src/ehrpwm.d \
+./src/pru_rpmsg.d \
+./src/pru_virtqueue.d 
+
+OBJS += \
+./src/ehrpwm.obj \
+./src/pru_rpmsg.obj \
+./src/pru_virtqueue.obj 
+
+OBJS__QUOTED += \
+"src/ehrpwm.obj" \
+"src/pru_rpmsg.obj" \
+"src/pru_virtqueue.obj" 
+
+C_DEPS__QUOTED += \
+"src/ehrpwm.d" \
+"src/pru_rpmsg.d" \
+"src/pru_virtqueue.d" 
+
+C_SRCS__QUOTED += \
+"../src/ehrpwm.c" \
+"/home/pops/BBAI64_CCS_Projects/PruSoftwareSupport/src/lib/src/rpmsg_lib/pru_rpmsg.c" \
+"/home/pops/BBAI64_CCS_Projects/PruSoftwareSupport/src/lib/src/rpmsg_lib/pru_virtqueue.c" 
+
+

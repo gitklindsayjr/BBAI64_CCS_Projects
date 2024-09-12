@@ -3,16 +3,6 @@
 
 /home/pops/ti/ccs1250/ccs/utils/bin/gmake -k -j 8 all -O 
  
-Building file: "../src/ehrpwm.c"
-Invoking: PRU Compiler
-"/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --include_path="/home/pops/ti/ccs1250/ccs/ccs_base/pru/include" --include_path="/home/pops/BBAI64_CCS_Projects/EHRPWMpru0" --include_path="/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --include_path="/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --include_path="/home/pops/BBAI64_CCS_Projects/PruLibrary/src" --include_path="/home/pops/BBAI64_CCS_Projects/PruSoftwareSupport/src/include" --include_path="/home/pops/BBAI64_CCS_Projects/PruSoftwareSupport/examples/PRU_RPMsg_Echo_Interrupt0" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little --preproc_with_compile --preproc_dependency="src/ehrpwm.d_raw" --obj_directory="src"  "../src/ehrpwm.c"
-Finished building: "../src/ehrpwm.c"
- 
-Building target: "EHRPWMpru0.out"
-Invoking: PRU Linker
-"/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/bin/clpru" --define=J721E_TDA4VM -g --diag_warning=225 --diag_wrap=off --display_error_number --endian=little -z -m"EHRPWMpru0.map" --stack_size=0x100 -i"/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/lib" -i"/home/pops/BBAI64_CCS_Projects/PruLibrary/Debug/src" -i"/home/pops/ti/ccs1250/ccs/tools/compiler/ti-cgt-pru_2.3.3/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="EHRPWMpru0_linkInfo.xml" --rom_model -o "EHRPWMpru0.out" "./src/ehrpwm.obj" "./src/pru_rpmsg.obj" "./src/pru_virtqueue.obj" "/home/pops/BBAI64_CCS_Projects/PruSoftwareSupport/examples/PRU_RPMsg_Echo_Interrupt0/J721E_PRU0_intc_rscTbl.cmd"  -llibc.a 
-<Linking>
-Finished building target: "EHRPWMpru0.out"
- 
+gmake[1]: 'EHRPWMpru0.out' is up to date.
 
 **** Build Finished ****
