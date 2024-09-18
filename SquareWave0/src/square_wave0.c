@@ -190,7 +190,8 @@ void main(void)
     while (pru_rpmsg_channel(RPMSG_NS_CREATE, &transport, CHAN_NAME, CHAN_DESC(CHAN_PORT), CHAN_PORT) != PRU_RPMSG_SUCCESS);
 #endif
     initScopeDebug0();
-	while(1)
+    __R30 = 0x10000;
+    while(1)
     {
     #ifdef RPMSG_CONTROL
 	    /* The following code was copied and pasted from the:
